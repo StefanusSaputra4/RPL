@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="/product">Products</a></li>
+                    <li><a href="#">Products</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
@@ -27,6 +27,9 @@
         </div>
     </header>
     <main>
+        <section class="hero">
+            <img src="motorcycle.png" alt="Motorcycle">
+        </section>
         <section class="products">
             <h2>All Products</h2>
             <div class="product-grid">
@@ -43,8 +46,8 @@
     </main>
 </body>
 </html>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>  
-<script>
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>  
+ <script>
     document.addEventListener('DOMContentLoaded', function() {
         const navLinks = document.querySelectorAll('nav ul li a');
         
@@ -56,3 +59,4 @@
         });
     });
 </script>
+
