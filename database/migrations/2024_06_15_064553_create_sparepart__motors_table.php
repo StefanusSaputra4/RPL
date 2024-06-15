@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('staff', function (Blueprint $table) {
+        Schema::create('sparepart__motors', function (Blueprint $table) {
             $table->id();
-            $table->string('namaStaff');
-            $table->integer('umur');
-            $table->integer('noTelepon');
-            $table->string('email');
-            $table->string('jenisKelamin');
             $table->timestamps();
         });
     }
@@ -27,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('staff');
+        Schema::dropIfExists('sparepart__motors');
     }
 };
