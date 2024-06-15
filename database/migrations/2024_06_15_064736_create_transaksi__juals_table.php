@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sparepart__motors', function (Blueprint $table) {
-            $table->id()->from(1000);
-            $table->string('namaProduk');
-            $table->float('harga');
+        Schema::create('transaksi__juals', function (Blueprint $table) {
+            $table->id()->from(100);
+            $table->bigInteger('idStaff');
+            $table->bigInteger('idCustomer');
+            $table->timestamp('tanggalPemesanan');
+            $table->dateTime('tanggalJthTempo');
             $table->timestamps();
         });
     }
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sparepart__motors');
+        Schema::dropIfExists('transaksi__juals');
     }
 };
