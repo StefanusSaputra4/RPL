@@ -19,8 +19,7 @@
                 </ul>
             </nav>
             <div class="search-cart">
-                <input type="text" placeholder="Search...">
-                <i class="fas fa-search"></i>
+                <box-icon name='search'></box-icon>
                 <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="profile-icon"><i class="fas fa-user"></i></a>
             </div>
@@ -46,3 +45,4 @@
     </main>
 </body>
 </html>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
