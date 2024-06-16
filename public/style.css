@@ -40,7 +40,7 @@ nav ul li a {
     padding: 10px 15px; /* Increased padding for larger clickable area */
     border-radius: 5px;
     transition: background-color 0.3s;
-    font-size: 1.1em; /* Increased font size for navbar links */
+    font-size: 1.5em; /* Increased font size for navbar links */
 }
 
 nav ul li a:hover,
@@ -64,7 +64,7 @@ nav ul li a.active {
     color: white;
     margin-right: 10px;
     cursor: pointer;
-    font-size: 1.2em; /* Increased icon size */
+    font-size: 2em; /* Increased icon size */
 }
 
 .search-cart .cart-icon,
@@ -72,7 +72,7 @@ nav ul li a.active {
     color: white;
     margin-left: 10px;
     text-decoration: none;
-    font-size: 1.5em; /* Increased icon size */
+    font-size: 2em; /* Increased icon size */
 }
 
 .hero {
@@ -81,7 +81,7 @@ nav ul li a.active {
 }
 
 .hero img {
-    width: 80%;
+    width: 50%;
     border: 2px solid blue;
     border-radius: 10px;
 }
@@ -148,4 +148,24 @@ nav ul li a.active {
 
 .product button:hover {
     background-color: #9a0007;
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    display: none; /* Sembunyikan dari awal */
+    position: absolute;
+    top: 0; /* Sesuaikan berdasarkan kebutuhan */
+    right: -10px; /* Sesuaikan agar angka muncul tepat di samping ikon */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px; /* Pastikan ada cukup ruang untuk dua digit */
 }
