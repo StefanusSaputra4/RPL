@@ -13,7 +13,11 @@ class SparepartMotorController extends Controller
      */
     public function index()
     {
-        //
+        $products = Sparepart_Motor::latest()->get();
+        return view('welcome', [
+            'title' => 'Menu',
+            'products' => $products
+        ]);
     }
 
     /**
