@@ -42,7 +42,8 @@
                     <h3>KNALPOT AKRAPOVIC</h3>
                     <p>Rp. 3.000.000,00</p>
                     <button id="add-to-cart-button">Add to Cart</button>
-                    <button>Buy Now</button>
+                    <button onclick="window.location.href='/payment'">Buy Now</button>
+
                 </div>
                 <!-- Repeat similar blocks for other products -->
             </div>

@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll("nav ul li a");
     const slides = document.querySelectorAll(".slide");
     const cartCount = document.getElementById("cart-count");
-    let itemCount = 0; // Initialize item count for cart
-    let index = 0; // Initialize index for slides
+    let itemCount = 0;  // Initialize item count for cart
+    let index = 0;  // Initialize index for slides
 
     // Navigation Links activation
     navLinks.forEach((link) => {
