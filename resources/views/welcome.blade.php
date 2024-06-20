@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fega Jaya</title>
+    <title>Fega Jaya || {{$title}}</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXRE8OfxzN6CKD1s6hD39B1mDeHI0Cgx2hY5POz1V6cy2Kp1qX1/oJr6r/3zXt32cbRHepw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,14 +48,15 @@
         <section class="products">
             <h2>All Products</h2>
             <div class="product-grid">
-                <div class="product">
-                    <img src="knalpot.png" alt="Knalpot Akrapovic">
-                    <h3>KNALPOT AKRAPOVIC</h3>
-                    <p>Rp. 3.000.000,00</p>
-                    <button>Add to Cart</button>
-                    <button>Buy Now</button>
-                </div>
-                <!-- Repeat similar blocks for other products -->
+                @foreach ($products as $product)
+                    <div class="product">
+                        <img src="knalpot.png" alt="Knalpot Akrapovic">
+                        <h3>{{$product->namaProduk}}</h3>
+                        <p>Rp. {{$product->harga}}</p>
+                        <button>Add to Cart</button>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                @endforeach
             </div>
         </section>
     </main>
